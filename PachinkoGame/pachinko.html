@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パチンコドリーマー</title>
+    <link rel="stylesheet" href="pachinko.css" type ="text/css">
+    <script src="pachinko.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+
+
+
+</head>
+<body>
+<div class = "all">
+    <div id="statusbar">
+        軍資金：<span id = "total"></span>ポイント<br>
+        1日上限回転数：残<span id = "limit_day_rpm">0</span>回転<br>
+    </div>
+    <br>
+
+    <div class = "contents">
+        <div id ="pachidisp">
+            スタート：<span id = "start_rpm">0</span>回転<br>
+            総回転数：<span id = "day_rpm">0</span>回転<br>
+            投資：<span id = "inv_point">0</span>Pt<br>
+            持ち玉：<span id = "return_point">0</span>Pt<br>
+            本日収支：<span id = "today_income">0</span>Pt<br>
+        </div>
+        <br>
+        <div id ="menu">
+            <input type="button" class="btn--orange btn--shadow" value = "1000ポイントを消費" onclick="pt1000();">
+            <br><br>
+            <input type="button" class="btn--orange btn--shadow" value = "当たるまで" onclick="pt1000();">
+        </div>
+    </div>
+    <div class = "window" id = "window_pachi">
+        <span id = "window_message"></span><br>
+        <input type="button" class="btn--orange btn--shadow" value = "進む" onclick="pt1000();">
+    </div>
+    <div id = "message">
+        <span id = "message"></span><br>
+    </div>
+</div>
+</body>
+
+</html>
